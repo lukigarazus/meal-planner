@@ -1,6 +1,11 @@
 <template>
   <Card :title="name">
-    <Input v-model="value" :value="value" :disabled="!future"/>
+    <Input
+      v-model="value"
+      :value="value"
+      :disabled="!future"
+      :title="!future?'Can\'t plan for the present or the past':''"
+    />
   </Card>
 </template>
 
